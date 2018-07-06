@@ -36,36 +36,41 @@
 </header>
   
 <body>
+    <div class="col-lg-12">
+        <div class="card card-default">
+          <div class="card-heading">
+            <h3 class="card-title">Contact Me</h3>
+          </div>
+          <div class="card-body">
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <span id="profile-img">Contact</span>
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form">
+              <div class="form-group row">
+                <label for="name-input">Name:</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="email-input">Email:</label>
+                <input class="form-control" id="email-input" type="email">
+              </div>
+              <div class="form-group row">
+                <label for="age-input">Age:</label>
+                <input class="form-control" id="age-input" type="number">
+              </div>
+              <div class="form-group row">
+                <label for="comment-input">How did you hear about us?</label>
+                <textarea class="form-control" id="comment-input" rows="5"></textarea>
+              </div>
+              <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
 
-      <form id="contact-form profile-img">
-        <ul>
-          <li>
-            <label for="name" id="name-border">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
-    </section>
-
-  </div>
 
   <footer>
     <div class="container">
-      Copyright &copy; 
+      Instant Message Me!
     </div>
   </footer>
 </body>

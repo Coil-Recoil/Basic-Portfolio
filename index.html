@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Erica+One|Shrikhand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -20,37 +22,45 @@
 <body>
 
   <!-- Navbar -->
-
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand col-lg-9" href="#">Nick Orlowski</a>
+  <header>
     <div class="container">
-      <div class="dropdown">
-        <button class="navbar-toggler btn" type="button" data-toggle="dropdown">
-          <span class="caret navbar-toggler-icon"></span>
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <span class="navbar-header">Nick Orlowski</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="col-lg-3 text-center dropdown-menu" align="center">
-          <li class="nav-item">
-            <a class="nav-link col-lg-1" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link col-lg-1" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link col-lg-1" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto col-lg-9">
+            <li class="nav-item active">
+              <a class="nav-link col-lg-3" href="index.html">About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link col-lg-3" href="portfolio.html"> Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link col-lg-3" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </nav>
     </div>
-  </nav>
+    </div>
+  </header>
 
   <div class="content">
     <div class="row">
       <div class="card-group">
 
-        <!-- Pic-->
+        <!-- Profile Pic -->
+
         <div class="col-lg-5">
           <div class="card border border-0">
-            <div class="card-body" align="center">
+            <div class="card-body social" align="center">
               <img src="assets/images/eventphoto.png" alt="nicko">
             </div>
           </div>
@@ -59,7 +69,7 @@
         <!-- Bio -->
 
         <div class="col-lg-7">
-          <div class="card border border-0">
+          <div class="card border border-0 social">
             <div class="card-heading">
               <h3 class="card-title text-center">About Me</h3>
             </div>
@@ -80,7 +90,7 @@
         <div class="container social">
           <div class="row" align="center">
 
-
+            <!-- Social Media -->
 
             <div class="col-sm-4">
               <div class="thumbnail">
@@ -107,7 +117,7 @@
                   <p>Social Media</p>
                   <img src="assets/images/socialmedia2.jpg" alt="Fjords" style="width:30%">
                 </a>
-
+<!--https://richmond.bootcampcontent.com/Hooch-->
               </div>
             </div>
           </div>
